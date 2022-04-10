@@ -1,0 +1,30 @@
+.mobile-menu-btn
+  display: none
+  padding: 20px
+
+.mobile-menu
+  display: none
+  position: relative
+
+.mobile-menu
+  &.active
+    display: block
+    .menu
+      display: block
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+    .menu__list
+      display: block
+      width: 100%
+      background-color: #fff
+      border-top: 1px solid $accent
+    .menu__item
+      border-bottom: 1px solid $accent
+    .menu__link
+      padding: 15px
+
+@media screen and (max-width: $lg)
+  .mobile-menu-btn
+    display: block

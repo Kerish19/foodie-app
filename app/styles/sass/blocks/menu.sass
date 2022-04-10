@@ -1,0 +1,27 @@
+.menu
+  position: relative
+.menu__list
+  display: flex
+  align-items: center
+  margin: 0
+  padding: 0
+.menu__item
+  list-style: none
+.menu__link
+  display: block
+  padding: 25px 45px
+  font-size: 16px
+  font-weight: 600
+  color: #252B42
+  letter-spacing: 0.2px
+  text-decoration: none
+  transition: color .2s
+  &:focus,
+  &:hover
+    color: lighten(#252B42, 20)
+  &.active
+    color: $accent
+
+@media screen and (max-width: $lg)
+  .menu
+    display: none
