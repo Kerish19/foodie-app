@@ -1,0 +1,59 @@
+.sec-info
+  &__container
+    display: flex
+    margin: 0 -15px
+  &__col
+    width: 50%
+    padding: 0 15px
+  &__img
+    position: relative
+    left: -22px
+    display: block
+    max-width: 100%
+  &__content
+    display: flex
+    flex-direction: column
+    justify-content: center
+    height: 100%
+  &__overhead 
+    font-size: 24px
+    font-weight: 700
+    line-height: 1.5
+    letter-spacing: 0.1px
+    color: $accent
+    margin-bottom: 10px
+  &__title
+    font-size: 40px
+    font-weight: 700
+    line-height: 1.2
+    color: #252B42
+    margin-bottom: 20px
+  &__text
+    font-size: 24px
+    font-weight: 500
+    line-height: 1.5
+  &_rev
+    .sec-info__img
+      margin-left: auto
+      left: 0
+
+@media screen and (max-width: $sm)
+  .sec-info
+    text-align: center
+    &__container
+      flex-direction: column-reverse
+    &__col
+      width: 100%
+    &__img
+      margin: 0 auto
+      left: 0
+    &__overhead
+      margin-bottom: 30px
+    &__title
+      margin-bottom: 40px
+    &__text
+      margin-bottom: 20px
+    &_rev
+      .sec-info__container
+        flex-direction: column
+
