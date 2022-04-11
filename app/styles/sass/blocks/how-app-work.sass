@@ -1,0 +1,32 @@
+.how-app-work
+  position: relative
+  z-index: 10
+  padding-top: 0
+  margin-top: -100px
+  text-align: center
+  &__divider
+    margin: 60px auto 40px auto
+    max-width: 880px
+    height: 3px
+    background-color: #e4e4e4
+  &__img
+    position: relative
+    left: -20px
+
+@media screen and (max-width: $md)
+  .how-app-work
+    margin-top: 0
+    padding-top: 35px
+    &__divider
+      display: none
+    &__title
+      margin-top: 40px
+
+@media screen and (max-width: $sm)
+  .how-app-work
+    margin-top: -100px
+    padding-top: 0
+    border-bottom: 3px solid #E4E4E4
+    &__title
+      font-size: 24px
+
