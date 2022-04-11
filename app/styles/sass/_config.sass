@@ -19,7 +19,7 @@ $sm: 576px
 // IMPORT SECTION
 
 @import 'node_modules/bootstrap/scss/bootstrap-reboot.scss' // Bootstrap Reboot collection
-@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss' // Bootstrap Breakpoints mixin
+// @import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss' // Bootstrap Breakpoints mixin
 // @import 'node_modules/bootstrap/scss/bootstrap-grid.scss' // Optional Bootstrap Grid
 // @import 'node_modules/bootstrap/scss/_utilities.scss' // Optional Bootstrap Utilites
 
@@ -30,19 +30,19 @@ $sm: 576px
 		font-family: $fname
 		font-style: $fstyle
 		font-weight: $fweight
-		src: url($furl) format('ttf')
+		src: url($furl) format('woff2')
 
-@include font('Montserrat', normal, 400, '../fonts/Montserrat-Regular.ttf')
-@include font('Montserrat', normal, 500, '../fonts/Montserrat-Medium.ttf')
-@include font('Montserrat', normal, 600, '../fonts/Montserrat-SemiBold.ttf')
-@include font('Montserrat', normal, 700, '../fonts/Montserrat-Bold.ttf')
-@include font('Montserrat', normal, 800, '../fonts/Montserrat-ExtraBold.ttf')
-@include font('Montserrat', normal, 900, '../fonts/Montserrat-Black.ttf')
+@include font('Montserrat', normal, 400, '../fonts/Montserrat-Regular.woff2')
+@include font('Montserrat', normal, 500, '../fonts/Montserrat-Medium.woff2')
+@include font('Montserrat', normal, 600, '../fonts/Montserrat-SemiBold.woff2')
+@include font('Montserrat', normal, 700, '../fonts/Montserrat-Bold.woff2')
+@include font('Montserrat', normal, 800, '../fonts/Montserrat-ExtraBold.woff2')
+@include font('Montserrat', normal, 900, '../fonts/Montserrat-Black.woff2')
 
-@include font('Poppins', normal, 600, '../fonts/Poppins-SemiBold.ttf')
-@include font('Poppins', normal, 700, '../fonts/Poppins-Bold.ttf')
-@include font('Poppins', normal, 800, '../fonts/Poppins-ExtraBold.ttf')
-@include font('Poppins', normal, 900, '../fonts/Poppins-Black.ttf')
+@include font('Poppins', normal, 600, '../fonts/Poppins-SemiBold.woff2')
+@include font('Poppins', normal, 700, '../fonts/Poppins-Bold.woff2')
+@include font('Poppins', normal, 800, '../fonts/Poppins-ExtraBold.woff2')
+@include font('Poppins', normal, 900, '../fonts/Poppins-Black.woff2')
 
 // GENERAL CSS SETTINGS
 
@@ -68,3 +68,4 @@ body
 	min-width: 320px
 	position: relative
 	overflow-x: hidden
+	letter-spacing: 0.2px
