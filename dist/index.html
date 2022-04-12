@@ -1,5 +1,43 @@
-<!--#set var="title" value="Food app" -->
-<!--#include virtual="/parts/header.html" -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Food app</title>
+	<meta name="description" content="Food app available on your favorite store. Start your premium experience now">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="icon" href="images/favicon.png">
+	<link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+	<header class="header">
+		<div class="header__left">
+			<div class="header__logo">
+				<img src="images/dist/logo.png" alt="Logo">
+			</div>
+		</div>
+		<div class="header__right">
+			<nav class="menu">
+				<ul class="menu__list">
+					<li class="menu__item">
+						<a class="menu__link active" href="#">Home</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="#">Product</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="#">Faq</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="#">Contact</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="mobile-menu-btn">
+				<img src="images/src/mobile-btn.svg" alt="">
+			</div>
+		</div>
+	</header>
 <main>
   <section class="banner">
     <div class="container banner__container">
@@ -92,4 +130,39 @@
     </div>
   </section>
 </main>
-<!--#include virtual="/parts/footer.html" -->
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__row">
+				<div class="footer__col">
+					<img class="footer__logo" src="images/dist/logo.png" alt="Logo">
+				</div>
+				<div class="footer__col">
+					<ul class="social">
+						<li class="social__item">
+							<a href="#">
+								<img src="images/dist/twitter.svg" alt="twitter">
+							</a>
+						</li>
+						<li class="social__item">
+							<a href="#">
+								<img src="images/dist/facebook.svg" alt="facebook">
+							</a>
+						</li>
+						<li class="social__item">
+							<a href="#">
+								<img src="images/dist/instagram.svg" alt="instagram">
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__col">
+					<div class="footer__copyright">
+						Copywright 2020 Bella Onojie.com
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/app.min.js"></script>
+</body>
+</html>
