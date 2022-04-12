@@ -40,11 +40,21 @@
     display: flex
     justify-content: center
     align-content: center
+.banner_footer
+  padding: 130px
+  background: #252B42 url("../../images/src/banner-footer-bg.jpg")
+  background-position: center
+  background-size: cover
+  .banner__title
+    font-size: 40px
 
 @media screen and (max-width: $md)
   .banner
     padding: 50px 0
     &__title
+      font-size: 36px
+  .banner_footer
+    .banner__title
       font-size: 36px
 @media screen and (max-width: $sm)
     .banner
@@ -66,3 +76,11 @@
         margin-top: 20px
         color: $accent
         border: 1px solid $accent
+      
+    .banner_footer
+      background: #252B42
+      padding: 100px 0
+      .banner__title
+        color: #fff
+      .banner__text
+        color: #bdbdbd
